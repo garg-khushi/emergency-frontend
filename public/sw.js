@@ -3,5 +3,5 @@ self.addEventListener("install", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  // just pass through
+  event.respondWith(fetch(event.request));
 });
